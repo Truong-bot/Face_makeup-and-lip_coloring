@@ -1,0 +1,98 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'UI_Maker_Face.ui'
+#
+# Created by: PyQt5 UI code generator 5.14.1
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1440, 900)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.graphicsView = QtWidgets.QGraphicsView(self.centralwidget)
+        self.graphicsView.setGeometry(QtCore.QRect(20, 70, 461, 581))
+        self.graphicsView.setObjectName("graphicsView")
+        self.graphicsView_2 = QtWidgets.QGraphicsView(self.centralwidget)
+        self.graphicsView_2.setGeometry(QtCore.QRect(960, 70, 461, 581))
+        self.graphicsView_2.setObjectName("graphicsView_2")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(180, 40, 141, 17))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(1150, 40, 81, 17))
+        self.label_2.setObjectName("label_2")
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton.setGeometry(QtCore.QRect(1200, 690, 171, 51))
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_2.setGeometry(QtCore.QRect(1050, 834, 151, 31))
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_3.setGeometry(QtCore.QRect(150, 690, 161, 51))
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_4.setGeometry(QtCore.QRect(1250, 834, 141, 31))
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.graphicsView_3 = QtWidgets.QGraphicsView(self.centralwidget)
+        self.graphicsView_3.setGeometry(QtCore.QRect(490, 70, 461, 581))
+        self.graphicsView_3.setObjectName("graphicsView_3")
+        self.pushButton_5 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_5.setGeometry(QtCore.QRect(650, 690, 161, 51))
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(680, 40, 141, 17))
+        self.label_3.setObjectName("label_3")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(1200, 700, 500, 51))
+        self.menubar.setObjectName("menubar")
+        self.menu_File = QtWidgets.QMenu(self.menubar)
+        self.menu_File.setObjectName("menu_File")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+        self.action_New = QtWidgets.QAction(MainWindow)
+        self.action_New.setObjectName("action_New")
+        self.action_Open = QtWidgets.QAction(MainWindow)
+        self.action_Open.setObjectName("action_Open")
+        self.action_Open_Recent = QtWidgets.QAction(MainWindow)
+        self.action_Open_Recent.setObjectName("action_Open_Recent")
+        self.action_Save = QtWidgets.QAction(MainWindow)
+        self.action_Save.setObjectName("action_Save")
+        self.action_Exit = QtWidgets.QAction(MainWindow)
+        self.action_Exit.setObjectName("action_Exit")
+        self.menu_File.addAction(self.action_New)
+        self.menu_File.addAction(self.action_Open)
+        self.menu_File.addAction(self.action_Open_Recent)
+        self.menu_File.addAction(self.action_Save)
+        self.menu_File.addAction(self.action_Exit)
+        self.menubar.addAction(self.menu_File.menuAction())
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Maker Face App"))
+        self.label.setText(_translate("MainWindow", "The Original Image"))
+        self.label_2.setText(_translate("MainWindow", "Final Image"))
+        self.pushButton.setText(_translate("MainWindow", "Run"))
+        self.pushButton_2.setText(_translate("MainWindow", "Save"))
+        self.pushButton_3.setText(_translate("MainWindow", "Open Original Image"))
+        self.pushButton_4.setText(_translate("MainWindow", "Exit"))
+        self.pushButton_5.setText(_translate("MainWindow", "Open Target Image"))
+        self.label_3.setText(_translate("MainWindow", "The Target Image"))
+        self.menu_File.setTitle(_translate("MainWindow", "&File"))
+        self.action_New.setText(_translate("MainWindow", "&New"))
+        self.action_Open.setText(_translate("MainWindow", "&Open"))
+        self.action_Open_Recent.setText(_translate("MainWindow", "&Open Recent"))
+        self.action_Save.setText(_translate("MainWindow", "&Save"))
+        self.action_Exit.setText(_translate("MainWindow", "&Exit"))
